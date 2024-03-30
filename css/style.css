@@ -28,7 +28,7 @@
   --light-pink: hsl(357, 93%, 84%);
   --light-gray: hsl(0, 0%, 80%);
   --old-rose: hsl(357, 37%, 62%);
-  --seashell: hsl(20, 43%, 93%);
+  --seashell: hsl(395, 90%, 93%);
   --charcoal: hsl(203, 30%, 26%);
   --white: hsl(0, 0%, 100%);
 
@@ -514,78 +514,6 @@ body {
 
 
 
-
-/*-----------------------------------*\
-  #CHAPTERS
-\*-----------------------------------*/
-
-.chapter-card {
-  height: 100%;
-  background-color: var(--white);
-  padding: 25px;
-  border-radius: var(--radius-5);
-  box-shadow: var(--shadow-2);
-  transition: var(--transition-2);
-}
-
-.chapter-card:is(:hover, :focus-within) { transform: translateY(-10px); }
-
-.chapter-card .card-title { margin-block-end: 15px; }
-
-
-
-
-
-/*-----------------------------------*\
-  #PREVIEW
-\*-----------------------------------*/
-
-.tab-list {
-  display: flex;
-  flex-direction: column;
-  gap: 10px;
-}
-
-.tab-card {
-  position: relative;
-  height: 60px;
-  background-color: var(--seashell);
-  border-radius: var(--radius-10);
-  box-shadow: var(--shadow-3);
-  display: grid;
-  place-content: center;
-  overflow: hidden;
-  cursor: pointer;
-  transition: var(--transition-1);
-}
-
-.tab-card .w-100 {
-  pointer-events: none;
-  opacity: 0;
-  transition: var(--transition-2);
-}
-
-.tab-card.active .w-100 { opacity: 1; }
-
-.tab-card.active {
-  height: 40vh;
-  box-shadow: none;
-}
-
-.tab-text {
-  font-size: var(--fs-4);
-  position: absolute;
-  top: 50%;
-  left: 50%;
-  transform: translate(-50%, -50%);
-}
-
-.tab-card.active .tab-text { display: none; }
-
-
-
-
-
 /*-----------------------------------*\
   #PRICING
 \*-----------------------------------*/
@@ -618,65 +546,6 @@ body {
 
 .pricing-card .btn { margin-inline: auto; }
 
-
-
-
-
-/*-----------------------------------*\
-  #AUTHOR
-\*-----------------------------------*/
-
-.author { background-color: var(--seashell); }
-
-.author .container {
-  display: grid;
-  gap: 40px;
-}
-
-.author :is(.section-subtitle, .section-title) { text-align: left; }
-
-.author-content {
-  background-color: var(--white);
-  padding: 30px;
-}
-
-.author-name {
-  font-size: var(--fs-6);
-  margin-block-end: 30px;
-}
-
-.author .section-text { font-size: unset; }
-
-
-
-
-
-/*-----------------------------------*\
-  #ACHIEVEMENT
-\*-----------------------------------*/
-
-.section.achievement { background-color: var(--white); }
-
-.achievement-card {
-  background-color: var(--seashell);
-  box-shadow: var(--shadow-4);
-  overflow: hidden;
-  transition: var(--transition-2);
-}
-
-.achievement-card:is(:hover, :focus-within) { transform: translateY(-10px); }
-
-.achievement-card .card-content {
-  position: relative;
-  padding: 15px;
-}
-
-.achievement-card .abs-img {
-  position: absolute;
-  top: 0;
-  right: -5px;
-  opacity: 0.3;
-}
 
 
 
